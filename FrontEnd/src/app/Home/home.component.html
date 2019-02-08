@@ -1,0 +1,18 @@
+<div style="padding:3em; padding-left: 6em">
+    <h2>Get Start !! How to use Dev portal </h2>
+    <br><br><br>
+
+    <div>
+        <ul class="nav nav-tabs">
+            <li [ngClass] = "{'active': selectedItem == item}" *ngFor="let item of homeMenuItems" (click)="onSubMenuClick(item)">
+              <a class="">{{item.name}}</a>
+            </li>
+          </ul>
+    </div>
+<!-- Insert child component -->
+    <div style="padding-top:4em " class="insert-a-component-inside">
+        <div #homeChildComponent></div>
+      </div>
+
+</div>
+

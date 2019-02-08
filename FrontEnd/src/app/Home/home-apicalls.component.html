@@ -1,0 +1,19 @@
+<div id="calling-the-api" class="">
+    <h3>API Calls</h3>
+    <br />
+    <p>
+        Here you can call our API. Just select a user, and a list of applications (often just one application),
+        then click "Get details" and wait maybe a few seconds for the results. It will show the response as a JSON string.
+    </p>
+    <p>
+        The response from the GetUserInformation API call contains a list of entitlements:
+        these are all the custom entitlements that the user is entitled to.
+        There are several ways a user can have an entitlement, either directly or indirectly:
+    </p>
+    <ul class="list-group">
+        <li class="list-group-item">The user has that custom entitlement directly.</li>
+        <li class="list-group-item">The user has a standard entitlement which includes that custom entitlement.</li>
+        <li class="list-group-item">The user’s company has that custom entitlement directly (account-level entitlement).</li>
+        <li class="list-group-item">The user’s company has a standard entitlement directly which includes that custom entitlement.</li>
+    </ul>
+</div>

@@ -1,0 +1,21 @@
+
+<!-- <div id="nav_up" class="navbar-collapse collapse navbar-responsive-collapse"> -->
+        <!-- <div id="nav_up" class="navbar navbar-expand-lg navbar-dark primary-color">
+    <ul class="nav navbar-nav navbar-left">
+            <li class="dropdown" *ngFor="let item of menuItems" (click)="menuClick(item)">
+            <a>{{item.name}}</a>    
+            </li>
+    </ul>
+</div> -->
+
+
+<div  style="padding-left:2em">
+                <ul class="nav nav-tabs">
+                    <li [ngClass] = "{'active': selectedItem == item}" *ngFor="let item of menuItems" (click)="menuClick(item)">
+                     <a routerLink= "{{item.routerLink}}">{{item.name}}</a>
+                    </li>
+                  </ul>
+            
+            </div>
+
+

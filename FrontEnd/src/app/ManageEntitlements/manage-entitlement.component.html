@@ -1,0 +1,27 @@
+<div style="padding:4em; padding-left: 6em">
+        <h3>Manage Entitlements :</h3>
+        <hr>
+            <div class="col-md-2"><h4>Select User</h4></div>
+            <div class="col-md-3">
+                    <select class="form-control"  ng-if="Users.length>0">
+                            <option *ngFor="let usr of Users">
+                              {{ usr.UserName }}
+                            </option>
+                          </select>
+            </div>
+            <br><br><br><br>
+            <div>
+                <ul class="nav nav-tabs">
+                    <li [ngClass] = "{'active': selectedItem == item}" *ngFor="let item of entitlementMenuItems" (click)="childStatusChanged(item)">
+                      <a class="">{{item.name}}</a>
+                    </li>
+                  </ul>
+            </div>
+
+            <div style="padding-top:4em " class="insert-a-component-inside">
+              <div #vc></div>
+            </div>
+
+  </div>
+
+

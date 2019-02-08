@@ -1,0 +1,23 @@
+<div class="">
+    <table class="table table-hover">
+      <thead>
+          <tr>
+              <th>Group Name</th>
+              <th>Status</th>
+              <th>Start Date</th>
+              <th>End Data</th>
+          </tr>
+      </thead>
+      <tbody ng-if="userToGroupAllColumns.length>0">
+          <tr *ngFor="let grp of userToGroupAllColumns">
+              <td >{{ grp.Group_Name }}</td>
+              <td >{{ grp.UserToGroup_Status_Name }}</td>
+              <td >{{ grp.UserToGroup_StartDate }}</td>
+              <td >{{ grp.UserToGroup_EndDate }}</td>
+              <!-- <td><mat-icon (click)="editContact(usr.Id)">Edit</mat-icon></td>
+            <td><mat-icon (click)="deleteContact(usr.Id)">Delete</mat-icon></td> -->
+          </tr>
+      </tbody>
+    </table>    
+  </div>
+
