@@ -12,8 +12,8 @@ import { Observable } from 'rxjs';
 export class ApiHelper implements OnInit{
     private serviceUrl : string =  'http://localhost/EntitledApi/EntitleOData';  // get the config file;
     antiForgeryToken: string = undefined;
-    userName: string //= 'ssahay@teamdrg.com';
-    apiKey:string  // = '19DFD5E7-79F5-419F-87AE-D3555D1FED3B';
+    userName: string //= 'ssahay';
+    apiKey:string  // = '19DFD5E7';
         constructor(private http : Http) {
             //this.getToken();  // later when imp authentication it'll use
         }
